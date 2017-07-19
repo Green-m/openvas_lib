@@ -591,8 +591,8 @@ class VulnscanManager(object):
 			raise TypeError("Expected string, got %r instead" % type(profile))
 
 		# Generate the random names used
-		m_target_name = "openvas_lib_target_%s_%s" % (target, generate_random_string(20))
-		m_job_name = "openvas_lib_scan_%s_%s" % (target, generate_random_string(20))
+		m_target_name = "openvas_lib_%s" % (generate_random_string(20))
+		m_job_name = "openvas_lib_%s" % (generate_random_string(20))
 
 		# Create the target
 		try:
